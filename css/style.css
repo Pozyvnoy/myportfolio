@@ -1,0 +1,278 @@
+*{
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background-color: #4644b4;
+    scroll-behavior: smooth;
+}
+section{
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+    color: white;
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+.section_heading{
+    font-weight: 700;
+    font-size: 32px;
+    color: white;
+    padding-top: 30px;
+    margin: 0 auto;
+    
+}
+.heading_name{
+    display: flex;
+justify-content: center;
+}
+
+.section_heading::after{
+    content: "";
+    display: block;
+    height: 2px;
+    width: 70px;    
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* NAV */
+
+.nav_wrapper{
+z-index: 1000;
+}
+.nav_list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 20px;
+    text-decoration: none;
+    list-style: none;
+    padding-top: 35px;
+}
+
+.nav_link{
+    
+    transition: 0.4s;
+    text-align: center;
+}
+.nav_item{
+    margin-right: 10px;
+    text-align: center;
+  transition: 0.4s;
+  border-radius: 10px;
+padding: 5px 15px;
+}
+.nav_item:hover .nav_link{
+   color: black;
+}
+.nav_item:hover{
+   
+    background-color: white;
+}
+
+
+/* Header */
+header{
+
+    position: relative;
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+#header_button{
+    outline: none;
+   text-align: center;
+    padding: 10px 5px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 23px;
+    background-color: #fff;
+    color: #4644b4;
+    position: absolute;
+    transform: translateY(100px);
+    
+   z-index: 99;
+}
+#mount_fr{
+    z-index: 100;
+}
+.text_2{
+    position: absolute;
+   font-size: 70px;
+   transform: translateY(20px);
+   left: 40px;
+}
+.text_1{
+    position: absolute;
+    font-size: 75px;
+    right: -117px;
+    top: 200px;
+}
+header img{
+    position: absolute;
+    top:0;
+
+   width: 100%; 
+    object-fit: cover;
+    pointer-events: none;
+
+}
+
+/* About me */
+.about{
+    z-index: 1;
+    padding-top: 100px;
+background-color:#1c0522;
+color:white;
+height: 100vh;
+padding-bottom: 50px;
+}
+.about_wrapper{
+    position: absolute;
+    text-align: center;
+
+    z-index: 2;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 40px;
+}
+.about_img{
+    position: absolute;
+    width: 30%;
+top: 0;
+z-index:1;
+    left: 0;
+    transform: translateY(850px) rotate(20deg);
+}
+.list{
+    left: 0;
+}
+.person{
+    position: absolute;
+    width: 60%;
+    transform: translateY(150px) rotate(-30deg);
+    right: 110px;
+    z-index: 1;
+}
+
+
+/* Portfolio */
+.swiper{
+    z-index: 2;
+}
+.swiper-button-next,.swiper-button-prev{
+    color: white;
+    width: 30;
+
+}
+
+.portfolio_wrapper{
+    object-fit: cover;
+    margin-top: 100px;
+    width: 800px;
+    height: 700px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.portfolio_papka{
+    object-fit: cover;
+    position: absolute;
+    pointer-events: none;
+    width: 30%;
+    top: 0;
+    right: 0;
+  
+    transform: rotate(30deg);
+}
+.portfolio_case{
+    position: absolute;
+    pointer-events: none;
+    width: 30%;
+    top: 450px;
+    transform: rotate(-30deg);
+}
+.portfolio_img{
+    border-radius:10px;
+    width: 800px;
+    box-sizing: border-box;
+    object-fit: cover;
+    margin-bottom: 30px;
+    transition: 0.4s;
+}
+.portfolio_img:hover{
+    transform: scale(1.1);
+}
+.portfolio_info{
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+    font-weight: 600;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+}
+
+/* CContact */
+
+.contact .section_heading{
+    margin-bottom: 100px;
+}
+.contact_text{
+    margin: 0 auto;
+display: flex;
+justify-content: center;
+color: white;
+font-size: 35px;
+margin-bottom: 30px;
+
+}
+
+.contact_imgs{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    
+}
+.contact_link_wrapper{
+   margin-bottom: 100px;
+    transition: 0.3s;
+}
+.contact_link_wrapper:hover{
+    
+    transform: scale(1.3);
+}
+.phone{
+    position: absolute;
+    object-fit: cover;
+    width: 40%;
+    pointer-events: none;
+    transform: translate(100px);
+    transform: translateY(-100px) rotate(10deg);
+}
+.chat{
+    position: absolute;
+    object-fit: cover;
+    width: 30%;
+    pointer-events: none;
+    transform: translateY(-200px) translateX(-250px) rotate(-20deg);
+}
+.contact_link{
+    font-size: 50px;
+}
