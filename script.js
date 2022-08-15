@@ -16,13 +16,11 @@ window.addEventListener('scroll',function(){
     text2.style.marginLeft = value *2 + 'px'
     btn.style.marginTop = value + 'px'
     phone.style.left = value * 0.25 + 'px';
-    // list.style.right = value + 'px';
-    chat.style.right = value * 0.25 + 'px';
-    // papka.style.right = value + 'px';
-    // case1.style.left = value + 'px'
+    list.style.left = value + 'px';
+    chat.style.left = value * 0.25 + 'px';
+    papka.style.left = value + 'px';
+    case1.style.marginRight = value + 'px'
 })
-
-
 
 const swiper = new Swiper('.swiper', {
     navigation: {
@@ -32,4 +30,4 @@ const swiper = new Swiper('.swiper', {
     slidesPerView: 1,
     loop:true,
     spaceBetween: 60,
-  });
+});
