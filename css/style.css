@@ -9,22 +9,22 @@ html{
     scroll-behavior: smooth;
 
 }
-section{
 
-}
 a{
     text-decoration: none;
-    font-size: 17px;
+    font-size: 20px;
     font-weight: 600;
     color: white;
 }
 .container{
     width: 1170px;
     margin: 0 auto;
+
 }
 .section_heading{
+    font-style: italic;
     font-weight: 700;
-    font-size: 32px;
+    font-size: 50px;
     color: white;
     padding-top: 30px;
     margin: 0 auto;
@@ -121,14 +121,15 @@ z-index: 1000;
 }
 .text_2{
     position: absolute;
-   font-size: 70px;
+   font-size: 80px;
    transform: translateY(20px);
-   left: 40px;
+   left: 1px;
 }
 .text_1{
+    
     position: absolute;
-    font-size: 75px;
-    right: -117px;
+    font-size: 85px;
+    right: -180px;
     top: 200px;
 }
 header img{
@@ -151,11 +152,16 @@ color:white;
 height: 100vh;
 
 }
+
+.about .section_heading::after{
+    background-color: #8E4E83;
+}
 .about::after{
     content: "";
     position: absolute;
     width: 100%;
     bottom: 0;
+   
 background: linear-gradient(to bottom, rgb(28, 5, 34),rgb(80, 27, 145));
 height: 20px;
 z-index: 1000;
@@ -164,27 +170,29 @@ z-index: 1000;
     position: absolute;
     text-align: center;
     z-index: 2;
+    color: #ca79bc;
+    text-shadow: 0 0 15px rgba(255,255,255,.2), 0 0 10px rgba(255,255,255,.2);
     font-weight: 500;
-    font-size: 25px;
-    line-height: 40px;
+    font-size: 30px;
+    line-height: 50px;
 }
 
 #list{
-    padding-top: 70px;
+    padding-top: 90px;
 
    
     width: 30%;
     position: absolute;
-    right: 0;
+    left: 0;
     top: 350px;
-    transform: translateX(-300px) rotate(-20deg);
+    transform: translateX(-200px) rotate(-40deg);
   
 }
 
 
 /* Portfolio */
-.portfoilio{
-
+.portfoilio .container{
+    overflow: hidden;
 }
 .swiper{
     
@@ -208,7 +216,7 @@ z-index: 1000;
 }
 
 #case{  
-    
+    z-index: -2;
     width: 30%;
     position: absolute;
     right: 0;
@@ -217,10 +225,10 @@ z-index: 1000;
 }
 #papka{
     padding-top: 500px;
-    transform: rotate(30deg) translateX(-300px);
+    transform: rotate(30deg) translateX(-600px);
     width: 30%;
     position: absolute;
-    left: 0;
+    right: 0;
 
 
 }
@@ -239,7 +247,8 @@ z-index: 1000;
     transform: scale(1.1);
 }
 .portfolio_info{
-    width: 700px;
+    line-height: 40px;
+    text-shadow: 0 0 15px rgba(255,255,255,.2), 0 0 10px rgba(255,255,255,.2);
     margin-left: auto;
     margin-right: auto;
     height: 300px;
@@ -250,7 +259,10 @@ z-index: 1000;
 }
 
 /* CContact */
+.contact{
+position: relative;
 
+}
 .contact .section_heading{
     padding-top: 200px;
 }
@@ -286,17 +298,20 @@ margin-bottom: 30px;
     object-fit: cover;
     width: 40%;
     pointer-events: none;
-    right: 0;
-    transform: rotate(10deg) translateY(-250px) translateX(500px);
+left: 0;
+    transform: rotate(10deg)translateX(100px)   ;
 }
 #chat{
     position: absolute;
     object-fit: cover;
     width: 30%;
     pointer-events: none;
-    bottom:0;
-    transform: rotate(-10deg) translateX(-700px) translateY(3500px);
+    bottom:0px;
+    transform: rotate(-10deg) translateX(-900px) translateY(3200px);
    
+}
+.gmail{
+    font-weight: 600;
 }
 .contact_link{
     transition: 0.2s;

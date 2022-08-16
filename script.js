@@ -15,11 +15,12 @@ window.addEventListener('scroll',function(){
     text1.style.marginRight = value *3 + 'px'
     text2.style.marginLeft = value *3 + 'px'
     btn.style.marginTop = value + 'px'
-    phone.style.right = value * 0.2 + 'px';
-    chat.style.bottom = value * 0.25  + 'px';
-    papka.style.left = value *0.17 + 'px';
-    list.style.right = value * 0.05 + 'px';
+    phone.style.left = value * 0.2 + 'px';
+    chat.style.bottom = value   + 'px';
+    papka.style.right = value *0.20 + 'px';
+    list.style.left = value * 0.1 + 'px';
     case1.style.right = value * -0.1 + 'px'
+    
 })
 
 const swiper = new Swiper('.swiper', {
