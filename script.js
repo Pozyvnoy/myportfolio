@@ -16,10 +16,10 @@ window.addEventListener('scroll',function(){
     text2.style.marginLeft = value *2 + 'px'
     btn.style.marginTop = value + 'px'
     phone.style.left = value * 0.25 + 'px';
-    list.style.left = value + 'px';
-    chat.style.left = value * 0.25 + 'px';
-    papka.style.left = value + 'px';
-    case1.style.marginRight = value + 'px'
+    chat.style.right = value *  + 'px';
+    papka.style.left = value *0.13 + 'px';
+    list.style.left = value * 0.1 + 'px';
+    case1.style.right = value * -0.1 + 'px'
 })
 
 const swiper = new Swiper('.swiper', {
@@ -29,5 +29,5 @@ const swiper = new Swiper('.swiper', {
       },
     slidesPerView: 1,
     loop:true,
-    spaceBetween: 60,
+    spaceBetween: 100,
 });
