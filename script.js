@@ -15,10 +15,10 @@ window.addEventListener('scroll',function(){
     text1.style.marginRight = value *2 + 'px'
     text2.style.marginLeft = value *2 + 'px'
     btn.style.marginTop = value + 'px'
-    phone.style.left = value * 0.25 + 'px';
-    chat.style.right = value *  + 'px';
-    papka.style.left = value *0.13 + 'px';
-    list.style.left = value * 0.1 + 'px';
+    phone.style.right = value * 0.2 + 'px';
+    chat.style.bottom = value * 0.25  + 'px';
+    papka.style.left = value *0.17 + 'px';
+    list.style.right = value * 0.05 + 'px';
     case1.style.right = value * -0.1 + 'px'
 })
 
