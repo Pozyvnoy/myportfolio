@@ -12,8 +12,8 @@ window.addEventListener('scroll',function(){
     let value = this.window.scrollY;
     mntbhnd.style.marginTop = value * 0.25 + 'px'
     stars.style.left = value * 0.25 + 'px';
-    text1.style.marginRight = value *2 + 'px'
-    text2.style.marginLeft = value *2 + 'px'
+    text1.style.marginRight = value *3 + 'px'
+    text2.style.marginLeft = value *3 + 'px'
     btn.style.marginTop = value + 'px'
     phone.style.right = value * 0.2 + 'px';
     chat.style.bottom = value * 0.25  + 'px';
